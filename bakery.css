@@ -1,0 +1,19 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box ;
+}
+body{
+    background-color: rgb(187, 147, 147);
+}
+.container{
+    width:80%;
+    height: 100vh;
+    margin:30px auto;
+    padding:40px;
+    position:relative;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(247,41,5,0.945);
+    background: #8d5252; 
+    border-radius: 20px;
+}
