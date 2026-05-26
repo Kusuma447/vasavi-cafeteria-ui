@@ -1,0 +1,224 @@
+*{
+    margin:0;
+    padding:0;
+    
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: 'poppins',sans-serif;
+    background-color: black;
+}
+
+.nav{
+    
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding:20px 80px;
+    
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+}
+ .logo h1{
+    margin-left: 20px;;
+    font-weight:bold;
+    font-family:'Times New Roman', Times, serif;
+    color:rgb(255, 251, 251);
+    letter-spacing: 2px;
+    animation: glow 0.9s ease-in-out infinite alternate;
+}
+@keyframes glow{
+    from{
+        text-shadow: 0 0 9px orange;
+    }
+    to{
+        text-shadow: 0 0 25px orangered;
+    }
+}
+ .logo span{
+    color: #ff3300;
+}
+.nav ul{
+    display:flex;
+    list-style: none;
+}
+.nav ul li{
+    margin: 10px;
+    }
+    .nav ul li a{
+        text-decoration: none;
+        color:rgb(250, 251, 251);
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        transition: 0.3s ease;
+        font-size: 20px;
+        background-color: none;
+    }
+    .nav ul li a:hover{
+        color:#ff3300;
+    }
+    button{
+        padding:5px;
+        margin-left: 20px;
+        border:none ;
+        cursor: pointer;
+        background: transparent;
+        font-weight: bold;
+        font-size: 20px;
+        color:rgb(250, 251, 251);
+        transition: 0.3s ease;
+    }
+    button:hover{
+        background-color:#ff3300;
+        border-radius: 5px;
+    }
+    .container h1{
+        color:rgb(250, 251, 251);
+        display:grid;
+        margin:49px;
+        font-size:30px;
+    }
+    .container p{
+        color:rgb(250, 251, 251);
+        margin:49px;
+    }
+    .hero h1{
+   text-shadow:0px 0px 20px rgba(255,140,0,0.7);
+}
+    .hero{
+        height: 100vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 80px;
+    }
+    .right h1{
+        font-size: 30px;
+        color:white;
+        
+
+    }
+    .right p{
+        color:white;
+        width-top:20px;
+        font-size: 20px;
+        margin-top:20px;
+    }
+    .left video{
+        width:300px;
+        height: 300px;
+        border-radius: 50%;
+        object-fit: cover;
+        animation:float 3s ease-in-out infinite;
+        }  
+
+        .scroll-down{
+            position:absolute;
+            bottom:30px;
+            left:50%;
+            transform:translateX(-50);
+            text-align: center;
+            color:white;
+            animation: bounce 1.5s infinite;
+        }
+        .scroll-down p{
+           font-size: 14px;
+           letter-spacing: 2px;
+           color:gray;
+        }
+        .scroll-down span{
+            font-size: 30px;
+            color:orangered;
+        }
+        @keyframes bounce{
+            0%{
+                transform: translate(-50%,0px);
+            }
+            50%{
+                transform: translate(-50%,10px);
+            }
+            100%{
+                transform: translate(-50%,0px);
+            }
+        }
+    .foods{
+        display: flex;
+        justify-content: space-between;
+        margin-top:100px;
+    }
+.box{
+    
+    padding: 15px;
+    margin-top: 30px;
+    margin-left:40px;
+    width: 280px;
+    height:420px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    transition: 0.3s ease;
+    border:2px solid orange;
+    display:flex;
+     flex-direction:column;
+     justify-content:space-between;
+     overflow:hidden;
+    
+}
+.box:hover{
+     transform:translateY(-10px);
+     box-shadow: 0px 0px 20px rgba(245, 58, 2, 0.979);
+}
+.box video{
+    width: 100%;
+    height: 180px;
+     object-fit: cover;
+     border-radius: 20px;
+    
+}
+.box h3{
+    color:black;
+    font-size: 24px;
+    margin-top: 15px;
+    font-family: poppins;
+    background: none;
+}
+.box p{
+    color:gray;
+    font-size: 15px;
+    margin-top: 8px;
+    line-height: 22px;
+    background: none;
+}
+.box button{
+    margin-top:25px;
+    padding:10px 22px;
+    border:none;
+    border-radius:30px;
+    background: orangered;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    
+    
+}
+.box button:hover{
+    transform:translateY(-3px);
+    box-shadow:0 0 15px orangered;
+   
+}
+footer{
+    margin-top: 100px;
+    padding: 30px;
+    text-align: center;
+    border-top:1px solid rgba(255,255,255,0.1);
+}
+footer p{
+    color:gray;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+footer span{
+    color:orangered;
+    font-weight: bold;
+}
