@@ -14,4 +14,32 @@
                 }
             });
         });
+      let cart=[];
+      const cartCount=document.getElementById("cartCount");
+      const panibtn=document.getElementById("panibtn");
+      panibtn.addEventListener("click",function(){
+        cart.push("Pani Puri");
+        console.log(cart);
+        cartCount.textContent=`Cart(${cart.length})`;
+      });
+      const chatbtn=document.getElementById("chatbtn");
+      chatbtn.addEventListener("click",function(){
+        cart.push("Chat Masala");
+        console.log(cart);
+        cartCount.textContent=`Cart(${cart.length})`;
+      });
+      const samosabtn=document.getElementById("samosabtn");
+      samosabtn.addEventListener("click",function(){
+        cart.push("Samosa");
+        console.log(cart);
+        cartCount.textContent=`Cart(${cart.length})`;
+      });
+      const noodlesbtn=document.getElementById("noodlesbtn");
+      noodlesbtn.addEventListener("click",function(){
+        cart.push("Noodles");
+        console.log(cart);
+        cartCount.textContent=`Cart(${cart.length})`;
+      });
       
+      
+     
