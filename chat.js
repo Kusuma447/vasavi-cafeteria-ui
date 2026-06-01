@@ -16,30 +16,76 @@
         });
       let cart=[];
       const cartCount=document.getElementById("cartCount");
-      const panibtn=document.getElementById("panibtn");
-      panibtn.addEventListener("click",function(){
-        cart.push("Pani Puri");
-        console.log(cart);
+       const cartItems=document.getElementById("cartItems");
+
+       const panibtn=document.getElementById("panibtn");
+        const chatbtn=document.getElementById("chatbtn");
+        const samosabtn=document.getElementById("samosabtn");
+        const noodlesbtn=document.getElementById("noodlesbtn");
+
+
+
+
+
+        function updateCart(){ 
+          let total=0;
+        cartItems.innerHTML="";
+        cart.forEach(function(food,index){
+          total+=food.price;
+          
+          cartItems.innerHTML+=`<p>
+          ${food.name}
+          <button onclick="removeItem(${index})">
+          ❌ </button> 
+          </p>`;
+        });
+        document.getElementById("totalPrice").textContent=`Total :₹${total}`;
         cartCount.textContent=`Cart(${cart.length})`;
+      };
+
+       function removeItem(index){
+          cart.splice(index,1);
+          updateCart();
+        };
+     
+          panibtn.addEventListener("click",function(){
+        cart.push({
+          name:"pani puri",
+          price:30
+        });
+       updateCart();
+        console.log(cart);
+       
       });
-      const chatbtn=document.getElementById("chatbtn");
+
       chatbtn.addEventListener("click",function(){
-        cart.push("Chat Masala");
+        cart.push({
+          name:"chat masala",
+          price:25
+        });
+       updateCart();
         console.log(cart);
-        cartCount.textContent=`Cart(${cart.length})`;
+       
       });
-      const samosabtn=document.getElementById("samosabtn");
+      
       samosabtn.addEventListener("click",function(){
-        cart.push("Samosa");
+         cart.push({
+          name:"samosa",
+          price:20
+        });
+       updateCart();
         console.log(cart);
-        cartCount.textContent=`Cart(${cart.length})`;
       });
-      const noodlesbtn=document.getElementById("noodlesbtn");
+      
       noodlesbtn.addEventListener("click",function(){
-        cart.push("Noodles");
+         cart.push({
+          name:"Noodles",
+          price:80
+        });
+       updateCart();
         console.log(cart);
-        cartCount.textContent=`Cart(${cart.length})`;
       });
+      
       
       
      

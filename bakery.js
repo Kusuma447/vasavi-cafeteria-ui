@@ -15,5 +15,12 @@ searchInput.addEventListener("input",function(){
     });
 });
 
-
+let cart=[];
+const cartCount=document.getElementById("cartCount");
+const icebtn=document.getElementById("icebtn");
+icebtn.addEventListener("click",function(){
+    cart.push("Ice Creams");
+    console.log(cart);
+    cartCount.textContent=`Cart(${cart.length})`;
+})
       
