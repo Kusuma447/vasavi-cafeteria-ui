@@ -18,14 +18,15 @@
       const cartCount=document.getElementById("cartCount");
        const cartItems=document.getElementById("cartItems");
 
-       const panibtn=document.getElementById("panibtn");
-        const chatbtn=document.getElementById("chatbtn");
-        const samosabtn=document.getElementById("samosabtn");
-        const noodlesbtn=document.getElementById("noodlesbtn");
-
-
-
-
+       const abcbtn=document.getElementById("abcbtn");
+        const milkbtn=document.getElementById("milkbtn");
+        const badhambtn=document.getElementById("badhambtn");
+        const karbujabtn=document.getElementById("karbujabtn");
+        const applebtn=document.getElementById("applebtn");
+        const bananabtn=document.getElementById("bananabtn");
+        const beetrootbtn=document.getElementById("beetrootbtn");
+        const pistabtn=document.getElementById("pistabtn");
+        
 
         function updateCart(){ 
           let total=0;
@@ -40,7 +41,7 @@
           </p>`;
         });
         document.getElementById("totalPrice").textContent=`Total :₹${total}`;
-        cartCount.textContent=`Cart(${cart.length})`;
+        cartCount.textContent=`(${cart.length})`;
       };
 
        function removeItem(index){
@@ -48,44 +49,75 @@
           updateCart();
         };
      
-          panibtn.addEventListener("click",function(){
+          abcbtn.addEventListener("click",function(){
         cart.push({
-          name:"pani puri",
-          price:30
+          name:"ABC Juice",
+          price:80
         });
        updateCart();
         console.log(cart);
        
       });
 
-      chatbtn.addEventListener("click",function(){
+      milkbtn.addEventListener("click",function(){
         cart.push({
-          name:"chat masala",
-          price:25
+          name:"Chocolate Milk Shake",
+          price:80
         });
        updateCart();
         console.log(cart);
        
       });
       
-      samosabtn.addEventListener("click",function(){
+      badhambtn.addEventListener("click",function(){
          cart.push({
-          name:"samosa",
-          price:20
-        });
-       updateCart();
-        console.log(cart);
-      });
-      
-      noodlesbtn.addEventListener("click",function(){
-         cart.push({
-          name:"Noodles",
+          name:"Badham",
           price:80
         });
        updateCart();
         console.log(cart);
       });
       
+      karbujabtn.addEventListener("click",function(){
+         cart.push({
+          name:"Karbuja",
+          price:80
+        });
+       updateCart();
+        console.log(cart);
+      });
+      bananabtn.addEventListener("click",function(){
+         cart.push({
+          name:"Banana",
+          price:80
+        });
+       updateCart();
+        console.log(cart);
+      });
+      beetrootbtn.addEventListener("click",function(){
+         cart.push({
+          name:"Beetroot Juice",
+          price:80
+        });
+       updateCart();
+        console.log(cart);
+      });
+      applebtn.addEventListener("click",function(){
+         cart.push({
+          name:"Apple Juice",
+          price:80
+        });
+       updateCart();
+        console.log(cart);
+      });
+      pistabtn.addEventListener("click",function(){
+         cart.push({
+          name:"Pista",
+          price:80
+        });
+       updateCart();
+        console.log(cart);
+      });
       
       
      

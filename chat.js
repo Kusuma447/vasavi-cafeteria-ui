@@ -39,8 +39,8 @@
           ❌ </button> 
           </p>`;
         });
-        document.getElementById("totalPrice").textContent=`Total :₹${total}`;
-        cartCount.textContent=`Cart(${cart.length})`;
+        document.getElementById("totalPrice").textContent=`Total:₹${total}`;
+        cartCount.textContent=`(${cart.length})`;
       };
 
        function removeItem(index){

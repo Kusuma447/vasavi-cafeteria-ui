@@ -18,10 +18,10 @@
       const cartCount=document.getElementById("cartCount");
        const cartItems=document.getElementById("cartItems");
 
-       const panibtn=document.getElementById("panibtn");
-        const chatbtn=document.getElementById("chatbtn");
-        const samosabtn=document.getElementById("samosabtn");
-        const noodlesbtn=document.getElementById("noodlesbtn");
+       const dosabtn=document.getElementById("dosabtn");
+        const idlybtn=document.getElementById("idlybtn");
+        const puribtn=document.getElementById("puribtn");
+        const upmabtn=document.getElementById("upmabtn");
 
 
 
@@ -40,7 +40,7 @@
           </p>`;
         });
         document.getElementById("totalPrice").textContent=`Total :₹${total}`;
-        cartCount.textContent=`Cart(${cart.length})`;
+        cartCount.textContent=`(${cart.length})`;
       };
 
        function removeItem(index){
@@ -48,9 +48,9 @@
           updateCart();
         };
      
-          panibtn.addEventListener("click",function(){
+          dosabtn.addEventListener("click",function(){
         cart.push({
-          name:"pani puri",
+          name:"Dosa",
           price:30
         });
        updateCart();
@@ -58,29 +58,29 @@
        
       });
 
-      chatbtn.addEventListener("click",function(){
+      idlybtn.addEventListener("click",function(){
         cart.push({
-          name:"chat masala",
-          price:25
+          name:"Idly",
+          price:30
         });
        updateCart();
         console.log(cart);
        
       });
       
-      samosabtn.addEventListener("click",function(){
+      puribtn.addEventListener("click",function(){
          cart.push({
-          name:"samosa",
-          price:20
+          name:"Puri",
+          price:40
         });
        updateCart();
         console.log(cart);
       });
       
-      noodlesbtn.addEventListener("click",function(){
+      upmabtn.addEventListener("click",function(){
          cart.push({
-          name:"Noodles",
-          price:80
+          name:"Upma",
+          price:30
         });
        updateCart();
         console.log(cart);

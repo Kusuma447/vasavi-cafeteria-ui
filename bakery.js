@@ -1,26 +1,113 @@
-const searchInput=document.getElementById("searchInput");
-const foodItems=document.querySelectorAll(".food-item");
-console.log("working");
-searchInput.addEventListener("input",function(){
-    const searchValue=searchInput.value.toLowerCase();
-    foodItems.forEach(function(item){
-        console.log("working");
-        const foodName=item.querySelector("h2").textContent.toLowerCase();
-        if(foodName.includes(searchValue)){
-            item.style.display="flex";
-        }
-        else{
-            item.style.display="none";
-        }
-    });
-});
+ const searchInput=document.getElementById("searchInput");
+  
+  const foodItems=document.querySelectorAll(".food-item");
+   searchInput.addEventListener("input",function(){
+            const searchValue = searchInput.value.toLowerCase();
+            console.log("searchValue");
+            foodItems.forEach(function(item){
+                const foodName=item.querySelector("h2").textContent.toLowerCase();
+                if(foodName.includes(searchValue)){
+                    item.style.display="flex";
+                }
+                else{
+                    item.style.display="none";
+                }
+            });
+        });
+      let cart=[];
+      const cartCount=document.getElementById("cartCount");
+       const cartItems=document.getElementById("cartItems");
 
-let cart=[];
-const cartCount=document.getElementById("cartCount");
-const icebtn=document.getElementById("icebtn");
-icebtn.addEventListener("click",function(){
-    cart.push("Ice Creams");
-    console.log(cart);
-    cartCount.textContent=`Cart(${cart.length})`;
-})
+       const icebtn=document.getElementById("icebtn");
+        const cakebtn=document.getElementById("cakesbtn");
+        const pizzabtn=document.getElementById("pizzabtn");
+        const sandbtn=document.getElementById("sandbtn");
+        const shabtn=document.getElementById("shabtn");
+        const chocobtn=document.getElementById("chocobtn");
+        const bakerybtn=document.getElementById("bakerybtn");
+
+
+        function updateCart(){ 
+          let total=0;
+        cartItems.innerHTML="";
+        cart.forEach(function(food,index){
+          total+=food.price;
+          
+          cartItems.innerHTML+=`<p>
+          ${food.name}
+          <button onclick="removeItem(${index})">
+          ❌ </button> 
+          </p>`;
+        });
+        document.getElementById("totalPrice").textContent=`Total :₹${total}`;
+        cartCount.textContent=`(${cart.length})`;
+      };
+
+       function removeItem(index){
+          cart.splice(index,1);
+          updateCart();
+        };
+     
+          icebtn.addEventListener("click",function(){
+        cart.push({
+          name:"Ice Creams",
+          price:20
+        });
+       updateCart();
+        console.log(cart);
+       
+      });
+
+      cakebtn.addEventListener("click",function(){
+        cart.push({
+          name:"Cakes",
+          price:250
+        });
+       updateCart();
+        console.log(cart);
+       
+      });
       
+      pizzabtn.addEventListener("click",function(){
+         cart.push({
+          name:"Pizza",
+          price:100
+        });
+       updateCart();
+        console.log(cart);
+      });
+      
+      sandbtn.addEventListener("click",function(){
+         cart.push({
+          name:"Sandwitch",
+          price:120
+        });
+       updateCart();
+        console.log(cart);
+      });
+      shabtn.addEventListener("click",function(){
+         cart.push({
+          name:"Shawarma",
+          price:120
+        });
+       updateCart();
+        console.log(cart);
+      });
+      chocobtn.addEventListener("click",function(){
+         cart.push({
+          name:"Chocolates",
+          price:20
+        });
+       updateCart();
+        console.log(cart);
+      });
+      bakerybtn.addEventListener("click",function(){
+         cart.push({
+          name:"Bakery Items",
+          price:15
+        });
+       updateCart();
+        console.log(cart);
+      });
+      
+     

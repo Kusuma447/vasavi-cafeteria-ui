@@ -18,11 +18,14 @@
       const cartCount=document.getElementById("cartCount");
        const cartItems=document.getElementById("cartItems");
 
-       const panibtn=document.getElementById("panibtn");
-        const chatbtn=document.getElementById("chatbtn");
-        const samosabtn=document.getElementById("samosabtn");
-        const noodlesbtn=document.getElementById("noodlesbtn");
-
+       const vegbtn=document.getElementById("vegbtn");
+        const chickenbtn=document.getElementById("chickenbtn");
+        const dumbtn=document.getElementById("dumbtn");
+        const noodlesbtn=document.getElementById("chicken-noodlesbtn");
+        const fishbtn=document.getElementById("fishbtn");
+         const friedbtn=document.getElementById("friedbtn");
+          const chi65btn=document.getElementById("65btn");
+           const chillibtn=document.getElementById("chillibtn");
 
 
 
@@ -40,7 +43,7 @@
           </p>`;
         });
         document.getElementById("totalPrice").textContent=`Total :₹${total}`;
-        cartCount.textContent=`Cart(${cart.length})`;
+        cartCount.textContent=`(${cart.length})`;
       };
 
        function removeItem(index){
@@ -48,30 +51,31 @@
           updateCart();
         };
      
-          panibtn.addEventListener("click",function(){
+          vegbtn.addEventListener("click",function(){
         cart.push({
-          name:"pani puri",
-          price:30
+          name:"Veg Biryani",
+          price:90
         });
        updateCart();
         console.log(cart);
        
       });
 
-      chatbtn.addEventListener("click",function(){
+      chickenbtn.addEventListener("click",function(){
         cart.push({
-          name:"chat masala",
-          price:25
+          name:"Chicken Biryani",
+          price:120
+          
         });
        updateCart();
         console.log(cart);
        
       });
       
-      samosabtn.addEventListener("click",function(){
+      dumbtn.addEventListener("click",function(){
          cart.push({
-          name:"samosa",
-          price:20
+          name:"Dum Biryani",
+          price:120
         });
        updateCart();
         console.log(cart);
@@ -79,7 +83,40 @@
       
       noodlesbtn.addEventListener("click",function(){
          cart.push({
-          name:"Noodles",
+          name:" chicken Noodles",
+          price:80
+        });
+       updateCart();
+        console.log(cart);
+      });
+      fishbtn.addEventListener("click",function(){
+         cart.push({
+          name:"Fish Curry",
+          price:80
+        });
+       updateCart();
+        console.log(cart);
+      });
+     
+      friedbtn.addEventListener("click",function(){
+         cart.push({
+          name:"Fried Piece Biryani",
+          price:125
+        });
+       updateCart();
+        console.log(cart);
+      });
+      chi65btn.addEventListener("click",function(){
+         cart.push({
+          name:" chicken 65",
+          price:80
+        });
+       updateCart();
+        console.log(cart);
+      });
+      chillibtn.addEventListener("click",function(){
+         cart.push({
+          name:"Chilli Chicken",
           price:80
         });
        updateCart();
