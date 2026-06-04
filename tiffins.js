@@ -14,7 +14,7 @@
                 }
             });
         });
-      let cart=[];
+      let cart= JSON.parse(localStorage.getItem("cart")) || [];
       const cartCount=document.getElementById("cartCount");
        const cartItems=document.getElementById("cartItems");
 
@@ -22,10 +22,19 @@
         const idlybtn=document.getElementById("idlybtn");
         const puribtn=document.getElementById("puribtn");
         const upmabtn=document.getElementById("upmabtn");
+        const cartOverlay = document.getElementById("cartOverlay");
 
+const closeCart = document.getElementById("closeCart");
+openCartBtn.addEventListener("click", function(){
 
+    cartOverlay.style.display = "flex";
 
+});
+closeCart.addEventListener("click", function(){
 
+    cartOverlay.style.display = "none";
+
+});
 
         function updateCart(){ 
           let total=0;
@@ -34,11 +43,12 @@
           total+=food.price;
           
           cartItems.innerHTML+=`<p>
-          ${food.name}
+          ${food.name} (${food.quantity})
           <button onclick="removeItem(${index})">
           ❌ </button> 
           </p>`;
         });
+         localStorage.setItem("cart",JSON.stringify(cart));
         document.getElementById("totalPrice").textContent=`Total :₹${total}`;
         cartCount.textContent=`(${cart.length})`;
       };
@@ -49,42 +59,83 @@
         };
      
           dosabtn.addEventListener("click",function(){
+            const exitFood=
+            cart.find(function(item){
+              return item.name === "Dosa"
+            });
+            if(exitFood){
+              exitFood.quantity++;
+            }
+            else{ 
         cart.push({
           name:"Dosa",
-          price:30
+          price:30,
+        quantity:1
         });
+      }
        updateCart();
         console.log(cart);
        
       });
 
       idlybtn.addEventListener("click",function(){
+        const exitFood=
+            cart.find(function(item){
+              return item.name === "Idly"
+            });
+            if(exitFood){
+              exitFood.quantity++;
+            }
+            else{ 
         cart.push({
           name:"Idly",
-          price:30
+          price:30,
+          quantity:1
         });
+      }
        updateCart();
         console.log(cart);
        
       });
       
       puribtn.addEventListener("click",function(){
+        const exitFood=
+            cart.find(function(item){
+              return item.name === "Puri"
+            });
+            if(exitFood){
+              exitFood.quantity++;
+            }
+            else{ 
          cart.push({
           name:"Puri",
-          price:40
+          price:40,
+          quantity:1
         });
+      }
        updateCart();
         console.log(cart);
       });
       
       upmabtn.addEventListener("click",function(){
+        const exitFood=
+            cart.find(function(item){
+              return item.name === "Upma"
+            });
+            if(exitFood){
+              exitFood.quantity++;
+            }
+            else{ 
          cart.push({
           name:"Upma",
-          price:30
+          price:30,
+          quantity:1
         });
+      }
        updateCart();
         console.log(cart);
       });
+      updateCart();
       
       
       

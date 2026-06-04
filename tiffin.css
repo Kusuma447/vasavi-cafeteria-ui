@@ -105,39 +105,65 @@ button{
 button:hover{
     color: #d6b38c;
 }
-.cartBox button{
-    background:transparent;
-    color:#888;
-    border:none;
-    padding: 2px 4px;
-    border-radius:10%;
-    font-size:16px;
-    cursor:pointer;
-    margin-left:10px;
-    transition:0.3s;
+.cartOverlay{
+    position: fixed;
+    display: flex;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100vh;
+
+    background: rgba(0,0,0,0.4);
+
+    display:none;
+
+    justify-content:flex-end;
+
+    z-index:1000;
 }
-.cartBox button:hover{
-    background:gray;
-    transition:scale(1.1);
+.cartDrawer{
+    width:350px;
+    height:100vh;
+
+   background:#111827;
+color:white;
+
+    padding:20px;
+
+    overflow-y:auto;
+
+    box-shadow:-5px 0 15px rgba(0,0,0,0.2);
+
+    animation: slideCart 0.3s ease;
 }
-.cartBox{
-   min-width:200px;
-    background: white;
-    border:2px solid #eee;
-    border-radius: 15px;
-    padding:15px;
-     height: 195px;
-    overflow-y: auto;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+@keyframes slideCart{
+    from{
+        transform:translateX(100%);
+    }
+
+    to{
+        transform:translateX(0);
+    }
 }
-cartBox h2{
+.cartHeader{
     display:flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size:28px;
+
+    justify-content:space-between;
+
+    align-items:center;
+
     margin-bottom:20px;
 }
-#cartCount{
-    font-size:18px;
-    color:gray;
+#closeCart{
+    background:none;
+
+    border:none;
+
+    font-size:22px;
+
+    cursor:pointer;
+}
+#closeCart{
+    color:white;
 }

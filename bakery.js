@@ -14,7 +14,7 @@
                 }
             });
         });
-      let cart=[];
+      let cart= JSON.parse(localStorage.getItem("cart")) || [];
       const cartCount=document.getElementById("cartCount");
        const cartItems=document.getElementById("cartItems");
 
@@ -25,6 +25,19 @@
         const shabtn=document.getElementById("shabtn");
         const chocobtn=document.getElementById("chocobtn");
         const bakerybtn=document.getElementById("bakerybtn");
+        const cartOverlay = document.getElementById("cartOverlay");
+
+const closeCart = document.getElementById("closeCart");
+openCartBtn.addEventListener("click", function(){
+
+    cartOverlay.style.display = "flex";
+
+});
+closeCart.addEventListener("click", function(){
+
+    cartOverlay.style.display = "none";
+
+});
 
 
         function updateCart(){ 
@@ -34,11 +47,12 @@
           total+=food.price;
           
           cartItems.innerHTML+=`<p>
-          ${food.name}
+          ${food.name}  (${food.quantity})
           <button onclick="removeItem(${index})">
           ❌ </button> 
           </p>`;
         });
+         localStorage.setItem("cart",JSON.stringify(cart));
         document.getElementById("totalPrice").textContent=`Total :₹${total}`;
         cartCount.textContent=`(${cart.length})`;
       };
@@ -49,65 +63,136 @@
         };
      
           icebtn.addEventListener("click",function(){
+            const exitFood=
+            cart.find(function(item){
+              return item.name === "Ice Creams"
+            });
+            if(exitFood){
+              exitFood.quantity++;
+            }
+            else{ 
         cart.push({
           name:"Ice Creams",
-          price:20
+          price:20,
+          quantity:1
         });
+      }
        updateCart();
         console.log(cart);
        
       });
 
       cakebtn.addEventListener("click",function(){
+        const exitFood=
+            cart.find(function(item){
+              return item.name === "Cakes"
+            });
+            if(exitFood){
+              exitFood.quantity++;
+            }
+            else{ 
         cart.push({
           name:"Cakes",
-          price:250
+          price:250,
+          quantity:1
         });
+      }
        updateCart();
         console.log(cart);
        
       });
       
       pizzabtn.addEventListener("click",function(){
+        const exitFood=
+            cart.find(function(item){
+              return item.name === "Pizza"
+            });
+            if(exitFood){
+              exitFood.quantity++;
+            }
+            else{ 
          cart.push({
           name:"Pizza",
-          price:100
+          price:100,
+          quantity:1
         });
+      }
        updateCart();
         console.log(cart);
       });
       
       sandbtn.addEventListener("click",function(){
+        const exitFood=
+            cart.find(function(item){
+              return item.name === "Sandwitch"
+            });
+            if(exitFood){
+              exitFood.quantity++;
+            }
+            else{ 
          cart.push({
           name:"Sandwitch",
-          price:120
+          price:120,
+          quantity:1
         });
+      }
        updateCart();
         console.log(cart);
       });
       shabtn.addEventListener("click",function(){
+        const exitFood=
+            cart.find(function(item){
+              return item.name === "Shawarma"
+            });
+            if(exitFood){
+              exitFood.quantity++;
+            }
+            else{ 
          cart.push({
           name:"Shawarma",
-          price:120
+          price:120,
+          quantity:1
         });
+      }
        updateCart();
         console.log(cart);
       });
       chocobtn.addEventListener("click",function(){
+        const exitFood=
+            cart.find(function(item){
+              return item.name === "Chocolates"
+            });
+            if(exitFood){
+              exitFood.quantity++;
+            }
+            else{ 
          cart.push({
           name:"Chocolates",
-          price:20
+          price:20,
+          quantity:1
         });
+      }
        updateCart();
         console.log(cart);
       });
       bakerybtn.addEventListener("click",function(){
+        const exitFood=
+            cart.find(function(item){
+              return item.name === "Bakery Items"
+            });
+            if(exitFood){
+              exitFood.quantity++;
+            }
+            else{ 
          cart.push({
           name:"Bakery Items",
-          price:15
+          price:15,
+          quantity:1
         });
+      }
        updateCart();
         console.log(cart);
       });
+      updateCart();
       
      

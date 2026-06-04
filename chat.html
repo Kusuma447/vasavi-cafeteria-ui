@@ -11,15 +11,30 @@
 <body>
     
         <div class="menu-container"> 
-           <div class="menu-header">    
+           <div class="menu-header"> <div class="left-header">   
         <img src="chat.webp">
         <h1>Chat masala</h1>
-        
-        <div class="cartBox">
-         <h2>Your Cart<span id="cartCount">(0)</span></h2>
-         <div id="cartItems"></div>
-         <h3 id="totalPrice">Total :₹ 0</h3>
         </div>
+         <button id="openCartBtn">
+    Cart <span id="cartCount">(0)</span>
+</button>
+    <div class="cartOverlay" id="cartOverlay">
+
+    <div class="cartDrawer" id="cartDrawer">
+
+        <div class="cartHeader">
+            <h2>Your Cart</h2>
+
+            <button id="closeCart">✖</button>
+        </div>
+
+        <div id="cartItems"></div>
+
+        <h3 id="totalPrice">Total : ₹0</h3>
+
+    </div>
+
+</div>
              </div>
              <div class="search-bar">
                 <input type="text" id="searchInput" placeholder="search">
@@ -86,7 +101,10 @@
         <button id="noodlesbtn">Add to Cart</button>
     </div>
     </div>
-    </div>
+    
+    
+   
+</div>
 
       <script src="chat.js"></script> 
     
