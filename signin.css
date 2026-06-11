@@ -1,0 +1,85 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background: black;
+}
+.container{
+    width: 700px;
+    height: 500px;
+    background: orangered;
+    color:aliceblue;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.25);
+    margin:50px auto;
+    font-size: 40px;
+
+}
+.email{
+    margin-left: 70px;
+    margin-top: 95px;
+    border-radius: 9px;
+   padding:10px;
+   font-size: 20px;
+}
+input:focus{
+    outline:none;
+    border: 2px solid white;
+}
+.password{
+    margin-left: 11px;
+     margin-top: 55px;
+    border-radius: 9px;
+   padding:10px;
+   font-size: 20px;
+}
+.em , .pa{
+    margin-left: 100px;
+}
+.signin{
+  margin-left: 280px;
+  padding:5px;
+  margin-top: 30px;
+ border-radius: 10px;
+cursor: pointer;
+font-size: 25px;
+}
+.signin:hover{
+    transition: 0.2s;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px white;
+
+}
+p{
+    margin-left:110px;
+    margin-top:20px;
+    font-size:20px;
+    cursor: pointer;
+    color: aliceblue;
+    decoration: none;
+}
+.signup{
+    display:flex;
+    align-items: center;
+    margin-top:25px;
+    margin-left: 90px;
+    
+   
+}
+.btn{
+    margin-top:23px;
+    padding:5px;
+    border-radius: 8px;
+    margin-left:7px;
+    cursor: pointer;
+    
+    
+}
+.btn:hover{
+    transition: 0.2s;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px white;
+
+}

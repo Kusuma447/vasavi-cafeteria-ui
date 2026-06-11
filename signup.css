@@ -7,6 +7,7 @@ body{
     font-size:26px;
     font-family:poppins,sans-serif;
     text-align: center;
+    margin-top: 28px;
    
 }
 .container{
@@ -22,7 +23,7 @@ body{
 .content div{
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+ margin-top: 28px;
   
     
 }
@@ -63,19 +64,21 @@ body{
    margin-top:5px;
 }
 .createAccount:hover{
-    
-    box-shadow: 0 0 20px whitesmoke;
+     transition: 0.2s;
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px white;
 }
 .signin{
-    border-radius: 15px;
-    font-size:20px ;
-   
+    border-radius: 10px;
+    font-size:17px ;
+   padding:2px;
    margin-bottom: 20px;
     cursor: pointer;
 }
 .signin:hover{
-   
-    box-shadow: 0 0 15px whitesmoke;
+    transition: 0.2s;
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px white;
    
   
 }
