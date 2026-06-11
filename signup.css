@@ -2,8 +2,8 @@
 body{
     background-color: black;
 
-header{
-    margin-top:90px;
+.head{
+   
     font-size:26px;
     font-family:poppins,sans-serif;
     text-align: center;
@@ -22,13 +22,14 @@ header{
 .content div{
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   
     
 }
 .content label{
+    margin:10px;
     display: inline-block;
-    width: 210px;
+    width: 250px;
     font-size: 22px;
     font-weight: bold;
 }
@@ -51,7 +52,7 @@ header{
     margin-top: 25px;
 }
 .createAccount{
-    background: rgb(206, 169, 169);
+    background: white;
   
    padding:10px;
    font-size: 15px;
@@ -62,16 +63,19 @@ header{
    margin-top:5px;
 }
 .createAccount:hover{
-    background:#e7cfcf;
+    
+    box-shadow: 0 0 20px whitesmoke;
 }
 .signin{
     border-radius: 15px;
     font-size:20px ;
-    border:none;
+   
    margin-bottom: 20px;
     cursor: pointer;
 }
 .signin:hover{
-    background:gray;
+   
+    box-shadow: 0 0 15px whitesmoke;
+   
   
 }
