@@ -95,7 +95,13 @@ box-shadow: 0 0 30px rgba(0,0,0,0.15);
     width:15px;
     height:15px;
     border-radius: 50%;
-    background: #22c55e;
+   
+}
+.available{
+    background: green;
+}
+.unavailable{
+    background: red;
 }
 .food-details h2{
 font-size:22px;

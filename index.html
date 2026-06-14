@@ -14,9 +14,9 @@
 <ul>
     <li><a href="#">Home</a></li>
     <li><a href="#">Menu</a></li>
-    <li><a href="#">Services</a></li>
-    <li><a href="#">About Us</a></li>
-    <li><a href="#">Gallery</a></li>
+    <li><a href="#" id="servicesbtn">Services</a></li>
+    <li><a href="#" id="aboutbtn">About Us</a></li>
+    <li><a href="#" id="gallerybtn">Gallery</a></li>
 </ul>
 <div class="sign">
     
@@ -89,5 +89,39 @@ Meet Tasty Bites 🍟</h1>
     <footer><p>
             Designed & Developed by <span>Kusuma</span>
         </p></footer>
+
+        <div id="servicespopup">
+            <div class="popupContent">
+                <h2>Our Services</h2>
+                <p>Online Menu</p>
+                <p>Add to Cart</p>
+                <p>Fresh Food</p>
+                <p>Fast Services</p>
+                <button id="closePopup">Close</button>
+            </div>
+        </div>
+        <div id="aboutpopup">
+            <div class="popupContent">
+                <h2>About Us</h2>
+               
+                <p>This Website was created to help students check food availability before visiting the canteen .</p>
+                <p>Students can easily availability of the items before entering into the canteen.</p>
+                <p>This Project is Curren see which items are available,saving time and avoiding unnecessary trips.</p>
+                <p> this project is currently a Frontend Prototype and will later be upgraded into  Full-Stack application with real-time updates.</p>
+                <button id="aboutclose">Close</button>
+            </div>
+        </div>
+        <div id="gallerypopup">
+            <div class="popupContent">
+                <div class="img">
+                <img src="drinks.jpg">
+                <img src="chat.webp">
+                <img src="bakery.jpg">
+                
+                <button id="galleryclose">close</button></div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
 </body>
 </html>

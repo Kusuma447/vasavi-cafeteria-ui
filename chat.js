@@ -140,6 +140,8 @@ closeCart.addEventListener("click", function(){
         console.log(cart);
       });
        updateCart();
+
+       
       
       
       
