@@ -23,6 +23,7 @@
         const puribtn=document.getElementById("puribtn");
         const upmabtn=document.getElementById("upmabtn");
         const cartOverlay = document.getElementById("cartOverlay");
+         const message=document.getElementById("message");
 
 const closeCart = document.getElementById("closeCart");
 openCartBtn.addEventListener("click", function(){
@@ -59,6 +60,12 @@ closeCart.addEventListener("click", function(){
         };
      
           dosabtn.addEventListener("click",function(){
+              message.innerText=" Added";
+              message.style.display="block";
+               setTimeout(function(){
+      message.style.display="none";
+    },1000);
+        
             const exitFood=
             cart.find(function(item){
               return item.name === "Dosa"
@@ -79,6 +86,12 @@ closeCart.addEventListener("click", function(){
       });
 
       idlybtn.addEventListener("click",function(){
+          message.innerText=" Added";
+              message.style.display="block";
+               setTimeout(function(){
+      message.style.display="none";
+    },1000);
+        
         const exitFood=
             cart.find(function(item){
               return item.name === "Idly"
@@ -99,6 +112,12 @@ closeCart.addEventListener("click", function(){
       });
       
       puribtn.addEventListener("click",function(){
+          message.innerText=" Added";
+              message.style.display="block";
+               setTimeout(function(){
+      message.style.display="none";
+    },1000);
+        
         const exitFood=
             cart.find(function(item){
               return item.name === "Puri"
@@ -118,6 +137,12 @@ closeCart.addEventListener("click", function(){
       });
       
       upmabtn.addEventListener("click",function(){
+          message.innerText=" Added";
+              message.style.display="block";
+               setTimeout(function(){
+      message.style.display="none";
+    },1000);
+        
         const exitFood=
             cart.find(function(item){
               return item.name === "Upma"

@@ -27,6 +27,7 @@
           const chi65btn=document.getElementById("65btn");
            const chillibtn=document.getElementById("chillibtn");
            const cartOverlay = document.getElementById("cartOverlay");
+            const message=document.getElementById("message");
 
 const closeCart = document.getElementById("closeCart");
 openCartBtn.addEventListener("click", function(){
@@ -66,6 +67,12 @@ closeCart.addEventListener("click", function(){
         };
      
           vegbtn.addEventListener("click",function(){
+              message.innerText=" Added";
+              message.style.display="block";
+               setTimeout(function(){
+      message.style.display="none";
+    },1000);
+        
             const exitFood=
             cart.find(function(item){
               return item.name === "Veg Biryani"
@@ -86,6 +93,12 @@ closeCart.addEventListener("click", function(){
       });
 
       chickenbtn.addEventListener("click",function(){
+          message.innerText=" Added";
+              message.style.display="block";
+               setTimeout(function(){
+      message.style.display="none";
+    },1000);
+        
         const exitFood=
             cart.find(function(item){
               return item.name === "Chicken Biryani"
@@ -107,6 +120,12 @@ closeCart.addEventListener("click", function(){
       });
       
       dumbtn.addEventListener("click",function(){
+          message.innerText=" Added";
+              message.style.display="block";
+               setTimeout(function(){
+      message.style.display="none";
+    },1000);
+        
         const exitFood=
             cart.find(function(item){
               return item.name === "Dum Biryani"
@@ -126,6 +145,12 @@ closeCart.addEventListener("click", function(){
       });
       
       noodlesbtn.addEventListener("click",function(){
+          message.innerText=" Added";
+              message.style.display="block";
+               setTimeout(function(){
+      message.style.display="none";
+    },1000);
+        
         const exitFood=
             cart.find(function(item){
               return item.name === "Chicken Noodles"
@@ -144,6 +169,12 @@ closeCart.addEventListener("click", function(){
         console.log(cart);
       });
       fishbtn.addEventListener("click",function(){
+          message.innerText=" Added";
+              message.style.display="block";
+               setTimeout(function(){
+      message.style.display="none";
+    },1000);
+        
         const exitFood=
             cart.find(function(item){
               return item.name === "Fish Curry"
@@ -163,6 +194,12 @@ closeCart.addEventListener("click", function(){
       });
      
       friedbtn.addEventListener("click",function(){
+          message.innerText=" Added";
+              message.style.display="block";
+               setTimeout(function(){
+      message.style.display="none";
+    },1000);
+        
         const exitFood=
             cart.find(function(item){
               return item.name === "Fried Piece Biryani"
@@ -181,6 +218,12 @@ closeCart.addEventListener("click", function(){
         console.log(cart);
       });
       chi65btn.addEventListener("click",function(){
+          message.innerText=" Added";
+              message.style.display="block";
+               setTimeout(function(){
+      message.style.display="none";
+    },1000);
+        
         const exitFood=
             cart.find(function(item){
               return item.name === "Chicken 65"
@@ -199,6 +242,12 @@ closeCart.addEventListener("click", function(){
         console.log(cart);
       });
       chillibtn.addEventListener("click",function(){
+          message.innerText=" Added";
+              message.style.display="block";
+               setTimeout(function(){
+      message.style.display="none";
+    },1000);
+        
         const exitFood=
             cart.find(function(item){
               return item.name === "Chilli Chicken"

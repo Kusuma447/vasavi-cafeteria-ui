@@ -111,6 +111,7 @@ button{
 button:hover{
     color: #d6b38c;
 }
+
 .cartOverlay{
     position: fixed;
     display: flex;
@@ -172,4 +173,16 @@ color:white;
 }
 #closeCart{
     color:white;
+}
+#message{
+    display:none;
+    position:fixed;
+  top:20px;
+  right:20px;
+  background:whitesmoke;
+  
+  color:black;
+  backdrop-filter: blur(10px);
+  padding:10px 20px;
+  border-radius: 10px;
 }

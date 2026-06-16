@@ -266,7 +266,7 @@ footer span{
     border-radius: 10px;
     margin-top:30px;
 }
-#gallerypopup{
+#contactpopup{
     display:none;
     position:fixed;
     top:0;
@@ -276,12 +276,8 @@ footer span{
     background:rgba(0,0,0,0.5);
     z-index:1000;
 }
-#galleryclose{
+#contactclose{
     background: black;
     border-radius: 10px;
     margin-top:40px;
-}
-.popupContent img{
-    width:100px;
-    height:100px;
 }

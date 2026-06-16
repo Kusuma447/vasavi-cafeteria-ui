@@ -20,12 +20,26 @@ aboutbtn.addEventListener("click",function(){
 closebtn.addEventListener("click",function(){
     aboutpopup.style.display="none";
 });
-const gallerybtn=document.getElementById("gallerybtn");
-const gallerypopup=document.getElementById("gallerypopup");
-const closegallery=document.getElementById("galleryclose");
-gallerybtn.addEventListener("click",function(){
-    gallerypopup.style.display="block";
+const contactbtn=document.getElementById("contactbtn");
+const contactpopup=document.getElementById("contactpopup");
+const closecontact=document.getElementById("contactclose");
+
+contactbtn.addEventListener("click",function(){
+    contactpopup.style.display="block";
 });
-closegallery.addEventListener("click",function(){
-    gallerypopup.style.display="none";
+closecontact.addEventListener("click",function(){
+    contactpopup.style.display="none";
+});
+
+const homeBtn=document.getElementById("homebtn");
+homeBtn.addEventListener("click",function(){
+    window.scrollTo(0,0);
+});
+const menuBtn=document.getElementById("menuBtn");
+menuBtn.addEventListener("click",function(event){
+    event.preventDefault();
+    
+    document.getElementById("menu").scrollIntoView({
+        behavior:"smooth"
+    });
 });

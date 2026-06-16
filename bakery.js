@@ -26,6 +26,8 @@
         const chocobtn=document.getElementById("chocobtn");
         const bakerybtn=document.getElementById("bakerybtn");
         const cartOverlay = document.getElementById("cartOverlay");
+         const message=document.getElementById("message");
+         
 
 const closeCart = document.getElementById("closeCart");
 openCartBtn.addEventListener("click", function(){
@@ -63,6 +65,13 @@ closeCart.addEventListener("click", function(){
         };
      
           icebtn.addEventListener("click",function(){
+            
+             document.getElementById("message").innerText="Added";
+              message.style.display="block";
+               setTimeout(function(){
+      message.style.display="none";
+    },1000);
+        
             const exitFood=
             cart.find(function(item){
               return item.name === "Ice Creams"
@@ -83,6 +92,12 @@ closeCart.addEventListener("click", function(){
       });
 
       cakebtn.addEventListener("click",function(){
+          message.innerText=" Added";
+              message.style.display="block";
+               setTimeout(function(){
+      message.style.display="none";
+    },1000);
+        
         const exitFood=
             cart.find(function(item){
               return item.name === "Cakes"
@@ -103,6 +118,12 @@ closeCart.addEventListener("click", function(){
       });
       
       pizzabtn.addEventListener("click",function(){
+          message.innerText=" Added";
+              message.style.display="block";
+               setTimeout(function(){
+      message.style.display="none";
+    },1000);
+        
         const exitFood=
             cart.find(function(item){
               return item.name === "Pizza"
@@ -122,6 +143,12 @@ closeCart.addEventListener("click", function(){
       });
       
       sandbtn.addEventListener("click",function(){
+          message.innerText=" Added";
+              message.style.display="block";
+               setTimeout(function(){
+      message.style.display="none";
+    },1000);
+        
         const exitFood=
             cart.find(function(item){
               return item.name === "Sandwitch"
@@ -140,6 +167,12 @@ closeCart.addEventListener("click", function(){
         console.log(cart);
       });
       shabtn.addEventListener("click",function(){
+          message.innerText=" Added";
+              message.style.display="block";
+               setTimeout(function(){
+      message.style.display="none";
+    },1000);
+        
         const exitFood=
             cart.find(function(item){
               return item.name === "Shawarma"
@@ -158,6 +191,12 @@ closeCart.addEventListener("click", function(){
         console.log(cart);
       });
       chocobtn.addEventListener("click",function(){
+          message.innerText=" Added";
+              message.style.display="block";
+               setTimeout(function(){
+      message.style.display="none";
+    },1000);
+        
         const exitFood=
             cart.find(function(item){
               return item.name === "Chocolates"
@@ -176,6 +215,12 @@ closeCart.addEventListener("click", function(){
         console.log(cart);
       });
       bakerybtn.addEventListener("click",function(){
+          message.innerText=" Added";
+              message.style.display="block";
+               setTimeout(function(){
+      message.style.display="none";
+    },1000);
+        
         const exitFood=
             cart.find(function(item){
               return item.name === "Bakery Items"

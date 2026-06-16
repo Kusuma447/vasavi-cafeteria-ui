@@ -26,6 +26,8 @@
 const cartOverlay = document.getElementById("cartOverlay");
 
 const closeCart = document.getElementById("closeCart");
+ const message=document.getElementById("message");
+  
 openCartBtn.addEventListener("click", function(){
 
     cartOverlay.style.display = "flex";
@@ -62,6 +64,11 @@ closeCart.addEventListener("click", function(){
         };
      
           panibtn.addEventListener("click",function(){
+              message.innerText=" Added";
+              message.style.display="block";
+               setTimeout(function(){
+      message.style.display="none";
+    },1000);
         
         const exitFood=
         cart.find(function(item){
@@ -83,6 +90,11 @@ closeCart.addEventListener("click", function(){
       });
 
       chatbtn.addEventListener("click",function(){
+        message.innerText=" Added";
+              message.style.display="block";
+               setTimeout(function(){
+      message.style.display="none";
+    },1000);
          const exitFood=
         cart.find(function(item){
           return item.name ==="chat masala";
@@ -103,6 +115,11 @@ closeCart.addEventListener("click", function(){
       });
       
       samosabtn.addEventListener("click",function(){
+        message.innerText=" Added";
+              message.style.display="block";
+               setTimeout(function(){
+      message.style.display="none";
+    },1000);
          const exitFood=
         cart.find(function(item){
           return item.name ==="samosa";
@@ -122,6 +139,11 @@ closeCart.addEventListener("click", function(){
       });
       
       noodlesbtn.addEventListener("click",function(){
+        message.innerText=" Added";
+              message.style.display="block";
+               setTimeout(function(){
+      message.style.display="none";
+    },1000);
          const exitFood=
         cart.find(function(item){
           return item.name ==="Noodles";
@@ -141,7 +163,8 @@ closeCart.addEventListener("click", function(){
       });
        updateCart();
 
-       
+   
+   
       
       
       

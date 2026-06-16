@@ -27,6 +27,7 @@
         const beetrootbtn=document.getElementById("beetrootbtn");
         const pistabtn=document.getElementById("pistabtn");
         const cartOverlay = document.getElementById("cartOverlay");
+         const message=document.getElementById("message");
 
 const closeCart = document.getElementById("closeCart");
 openCartBtn.addEventListener("click", function(){
@@ -64,6 +65,12 @@ closeCart.addEventListener("click", function(){
         };
      
           abcbtn.addEventListener("click",function(){
+              message.innerText=" Added";
+              message.style.display="block";
+               setTimeout(function(){
+      message.style.display="none";
+    },1000);
+        
             const exitFood=
             cart.find(function(item){
               return item.name === "ABC Juice"
@@ -84,6 +91,12 @@ closeCart.addEventListener("click", function(){
       });
 
       milkbtn.addEventListener("click",function(){
+          message.innerText=" Added";
+              message.style.display="block";
+               setTimeout(function(){
+      message.style.display="none";
+    },1000);
+        
         const exitFood=
             cart.find(function(item){
               return item.name === "Chocolate Milk Shake"
@@ -104,6 +117,12 @@ closeCart.addEventListener("click", function(){
       });
       
       badhambtn.addEventListener("click",function(){
+          message.innerText=" Added";
+              message.style.display="block";
+               setTimeout(function(){
+      message.style.display="none";
+    },1000);
+        
         const exitFood=
             cart.find(function(item){
               return item.name === "Badham"
@@ -123,6 +142,12 @@ closeCart.addEventListener("click", function(){
       });
       
       karbujabtn.addEventListener("click",function(){
+          message.innerText=" Added";
+              message.style.display="block";
+               setTimeout(function(){
+      message.style.display="none";
+    },1000);
+        
         const exitFood=
             cart.find(function(item){
               return item.name === "Karbuja"
@@ -141,6 +166,12 @@ closeCart.addEventListener("click", function(){
         console.log(cart);
       });
       bananabtn.addEventListener("click",function(){
+          message.innerText=" Added";
+              message.style.display="block";
+               setTimeout(function(){
+      message.style.display="none";
+    },1000);
+        
         const exitFood=
             cart.find(function(item){
               return item.name === "Banana"
@@ -159,6 +190,12 @@ closeCart.addEventListener("click", function(){
         console.log(cart);
       });
       beetrootbtn.addEventListener("click",function(){
+          message.innerText=" Added";
+              message.style.display="block";
+               setTimeout(function(){
+      message.style.display="none";
+    },1000);
+        
         const exitFood=
             cart.find(function(item){
               return item.name === "Beetroot Juice"
@@ -177,6 +214,12 @@ closeCart.addEventListener("click", function(){
         console.log(cart);
       });
       applebtn.addEventListener("click",function(){
+          message.innerText=" Added";
+              message.style.display="block";
+               setTimeout(function(){
+      message.style.display="none";
+    },1000);
+        
         const exitFood=
             cart.find(function(item){
               return item.name === "Apple Juice"
@@ -195,6 +238,12 @@ closeCart.addEventListener("click", function(){
         console.log(cart);
       });
       pistabtn.addEventListener("click",function(){
+          message.innerText=" Added";
+              message.style.display="block";
+               setTimeout(function(){
+      message.style.display="none";
+    },1000);
+        
         const exitFood=
             cart.find(function(item){
               return item.name === "Pista"
