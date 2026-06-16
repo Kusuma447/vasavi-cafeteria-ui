@@ -58,7 +58,7 @@ p{
     font-size:20px;
     cursor: pointer;
     color: aliceblue;
-    decoration: none;
+    text-decoration: none;
 }
 .signup{
     display:flex;
