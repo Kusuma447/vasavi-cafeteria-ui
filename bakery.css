@@ -127,7 +127,7 @@ button:hover{
 
     justify-content:flex-end;
 
-    z-index:1000;
+    z-index:2000;
 }
 .cartDrawer{
     width:350px;
@@ -173,6 +173,15 @@ color:white;
 }
 #closeCart{
     color:white;
+}
+#cartItems p{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:15px;
+    padding:12px;
+    background:#f3f4f6;
+    border-radius:10px;
 }
 #message{
     display:none;

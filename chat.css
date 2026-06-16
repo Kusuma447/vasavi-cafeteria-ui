@@ -145,7 +145,7 @@ button:hover{
 
     justify-content:flex-end;
 
-    z-index:1000;
+    z-index:2000;
 }
 .cartDrawer{
     width:350px;

@@ -70,7 +70,7 @@ closeCart.addEventListener("click", function(){
               message.style.display="block";
                setTimeout(function(){
       message.style.display="none";
-    },1000);
+    },2000);
         
             const exitFood=
             cart.find(function(item){
@@ -96,7 +96,7 @@ closeCart.addEventListener("click", function(){
               message.style.display="block";
                setTimeout(function(){
       message.style.display="none";
-    },1000);
+    },2000);
         
         const exitFood=
             cart.find(function(item){
@@ -122,7 +122,7 @@ closeCart.addEventListener("click", function(){
               message.style.display="block";
                setTimeout(function(){
       message.style.display="none";
-    },1000);
+    },2000);
         
         const exitFood=
             cart.find(function(item){
@@ -147,7 +147,7 @@ closeCart.addEventListener("click", function(){
               message.style.display="block";
                setTimeout(function(){
       message.style.display="none";
-    },1000);
+    },2000);
         
         const exitFood=
             cart.find(function(item){
@@ -171,7 +171,7 @@ closeCart.addEventListener("click", function(){
               message.style.display="block";
                setTimeout(function(){
       message.style.display="none";
-    },1000);
+    },2000);
         
         const exitFood=
             cart.find(function(item){
@@ -195,7 +195,7 @@ closeCart.addEventListener("click", function(){
               message.style.display="block";
                setTimeout(function(){
       message.style.display="none";
-    },1000);
+    },2000);
         
         const exitFood=
             cart.find(function(item){
@@ -219,7 +219,7 @@ closeCart.addEventListener("click", function(){
               message.style.display="block";
                setTimeout(function(){
       message.style.display="none";
-    },1000);
+    },2000);
         
         const exitFood=
             cart.find(function(item){
