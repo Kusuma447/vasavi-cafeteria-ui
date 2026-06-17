@@ -204,12 +204,55 @@ color:white;
   padding:10px 20px;
   border-radius: 10px;
 }
-@media(max-width:600px){
+@media (max-width:600px){
+
     .menu-container{
-       max-width: 180px;
+        width:100%;
+        padding:15px;
+    }
+
+    .menu-header{
+        flex-direction:column;
+        text-align:center;
+        gap:15px;
+      
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 
     }
-    .menu-header{
-        max-width: 50px;
+
+    .menu-header img{
+        width:120px;
+        height:120px;
     }
+
+    .menu-header h1{
+        font-size:40px;
+    }
+
+    .search-bar input{
+        width:100%;
+    }
+
+    .food-item{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:15px;
+        width:100%;
+    padding:20px;
+
+    }
+
+    .food-item button{
+        width:100%;
+    }
+
+    .cartDrawer{
+        width:100%;
+        max-width:350px;
+    }
+    #openCartBtn{
+    margin-left:auto;
+}
 }

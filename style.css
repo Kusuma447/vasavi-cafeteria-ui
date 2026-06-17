@@ -284,23 +284,35 @@ footer span{
 }
 /*mobile responsive */
 @media (max-width: 600px) {
-    .nav {
-        flex-direction: column;
-        padding: 15px 20px;
-        gap: 5px;
+   
+
+    .nav{
+        flex-direction:column;
+        padding:20px;
+        gap:20px;
     }
-    .nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 4px;
+
+   @media(max-width:768px){
+
+    .nav ul{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:12px;
     }
-    .nav ul li a {
-        font-size: 14px;
+}
+
+    .nav ul li{
+        margin:0;
     }
-    .sign {
-        display: flex;
-        gap: 5px;
+
+    .sign{
+        display:flex;
+        gap:15px;
     }
+
+
+   
     .hero {
         flex-direction: row;
         padding: 20px;

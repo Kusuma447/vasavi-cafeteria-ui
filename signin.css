@@ -7,7 +7,7 @@ body{
     background: black;
 }
 .container{
-    width: 700px;
+    
     height: 500px;
     background: orangered;
     color:aliceblue;
@@ -15,6 +15,10 @@ body{
     box-shadow: 0 0 25px rgba(0,0,0,0.25);
     margin:50px auto;
     font-size: 40px;
+  
+    width:90%;
+    max-width:700px;
+
 
 }
 .email{
@@ -82,4 +86,49 @@ p{
     transform: translateY(-5px);
     box-shadow: 0 10px 20px white;
 
+}
+@media(max-width:600px){
+
+    .container{
+        width:90%;
+        height:auto;
+        padding:25px;
+        font-size:28px;
+    }
+
+    .em,
+    .pa{
+        display:block;
+        margin:20px 0 10px 0;
+    }
+
+    .email,
+    .password{
+        width:100%;
+        margin:0;
+        font-size:16px;
+    }
+
+    .signin{
+        width:100%;
+        margin:25px 0 0 0;
+        padding:12px;
+        font-size:20px;
+    }
+
+    p{
+        margin:15px 0;
+        text-align:center;
+        font-size:16px;
+    }
+
+    .signup{
+        margin:20px 0 0 0;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .btn{
+        margin:10px 0 0 0;
+    }
 }
